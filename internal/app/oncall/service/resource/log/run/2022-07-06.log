@@ -1,0 +1,30 @@
+2022-07-06 10:36:57.892 [ERRO] Error 1146: Table 'seven-admin.he_freezing_points_record' doesn't exist, SELECT COUNT(1) FROM `he_freezing_points_record`
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    /Users/edy/Code/go/seven/gf/seven-admin/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List.func1
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:37
+3.  github.com/gogf/gf/v2/util/gutil.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/util/gutil/gutil.go:39
+4.  github.com/gogf/gf/v2/frame/g.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/frame/g/g_func.go:67
+5.  github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:28
+6.  github.com/tiger1103/gfast/v3/internal/app/oncall/service_test.TestList
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record_test.go:21
+ 
+2022-07-06 10:39:28.544 [ERRO] Error 1146: Table 'seven-admin.he_freezing_points_record' doesn't exist, SELECT COUNT(1) FROM `he_freezing_points_record`
+Stack:
+1.  github.com/tiger1103/gfast/v3/library/liberr.ErrIsNil
+    /Users/edy/Code/go/seven/gf/seven-admin/library/liberr/err.go:18
+2.  github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List.func1
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:37
+3.  github.com/gogf/gf/v2/util/gutil.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/util/gutil/gutil.go:39
+4.  github.com/gogf/gf/v2/frame/g.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/frame/g/g_func.go:67
+5.  github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:28
+6.  github.com/tiger1103/gfast/v3/internal/app/oncall/service_test.TestList
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record_test.go:21
+ 

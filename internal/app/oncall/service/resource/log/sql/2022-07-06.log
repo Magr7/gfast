@@ -1,0 +1,154 @@
+2022-07-06 10:36:57.857 [ERRO] {d07f43f6f21cff166d894408fbceeea3} [122 ms] [default] [rows:0  ] SHOW FULL COLUMNS FROM `he_freezing_points_record`
+Error: Error 1146: Table 'seven-admin.he_freezing_points_record' doesn't exist 
+Stack:
+1.  github.com/gogf/gf/v2/database/gdb.(*Core).writeSqlToLogger
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:662
+2.  github.com/gogf/gf/v2/database/gdb.(*Core).DoCommit
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:300
+3.  github.com/gogf/gf/v2/database/gdb.(*Core).DoQuery
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:62
+4.  github.com/gogf/gf/v2/database/gdb.(*Core).DoSelect
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:155
+5.  github.com/gogf/gf/v2/database/gdb.(*DriverMysql).TableFields.func1
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_driver_mysql.go:151
+6.  github.com/gogf/gf/v2/container/gmap.(*AnyAnyMap).doSetWithLockCheck
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/container/gmap/gmap_hash_any_any_map.go:220
+7.  github.com/gogf/gf/v2/container/gmap.(*AnyAnyMap).GetOrSetFuncLock
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/container/gmap/gmap_hash_any_any_map.go:257
+8.  github.com/gogf/gf/v2/database/gdb.(*DriverMysql).TableFields
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_driver_mysql.go:141
+9.  github.com/gogf/gf/v2/database/gdb.(*Core).TableFields
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_utility.go:158
+10. github.com/gogf/gf/v2/database/gdb.(*Model).TableFields
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_utility.go:41
+11. github.com/gogf/gf/v2/database/gdb.(*Model).getSoftFieldName
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_time.go:98
+12. github.com/gogf/gf/v2/database/gdb.(*Model).getSoftFieldNameDeleted
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_time.go:92
+13. github.com/gogf/gf/v2/database/gdb.(*Model).getConditionForSoftDeleting
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_time.go:144
+14. github.com/gogf/gf/v2/database/gdb.(*Model).formatCondition
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:673
+15. github.com/gogf/gf/v2/database/gdb.(*Model).getFormattedSqlAndArgs
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:565
+16. github.com/gogf/gf/v2/database/gdb.(*Model).Count
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:383
+17. github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List.func1
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:36
+18. github.com/gogf/gf/v2/util/gutil.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/util/gutil/gutil.go:39
+19. github.com/gogf/gf/v2/frame/g.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/frame/g/g_func.go:67
+20. github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:28
+21. github.com/tiger1103/gfast/v3/internal/app/oncall/service_test.TestList
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record_test.go:21
+ 
+2022-07-06 10:36:57.892 [ERRO] {700698fdf21cff166e89440898fae62b} [ 34 ms] [default] [rows:0  ] SELECT COUNT(1) FROM `he_freezing_points_record`
+Error: Error 1146: Table 'seven-admin.he_freezing_points_record' doesn't exist 
+Stack:
+1.  github.com/gogf/gf/v2/database/gdb.(*Core).writeSqlToLogger
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:662
+2.  github.com/gogf/gf/v2/database/gdb.(*Core).DoCommit
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:300
+3.  github.com/gogf/gf/v2/database/gdb.(*Core).DoQuery
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:62
+4.  github.com/gogf/gf/v2/database/gdb.(*Core).DoSelect
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:155
+5.  github.com/gogf/gf/v2/database/gdb.(*HookSelectInput).Next
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_hook.go:110
+6.  github.com/gogf/gf/v2/database/gdb.(*Model).doGetAllBySql
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:543
+7.  github.com/gogf/gf/v2/database/gdb.(*Model).Count
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:384
+8.  github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List.func1
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:36
+9.  github.com/gogf/gf/v2/util/gutil.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/util/gutil/gutil.go:39
+10. github.com/gogf/gf/v2/frame/g.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/frame/g/g_func.go:67
+11. github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:28
+12. github.com/tiger1103/gfast/v3/internal/app/oncall/service_test.TestList
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record_test.go:21
+ 
+2022-07-06 10:39:28.521 [ERRO] {6842340f161dff168ddb037bdc524a42} [ 43 ms] [default] [rows:0  ] SHOW FULL COLUMNS FROM `he_freezing_points_record`
+Error: Error 1146: Table 'seven-admin.he_freezing_points_record' doesn't exist 
+Stack:
+1.  github.com/gogf/gf/v2/database/gdb.(*Core).writeSqlToLogger
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:662
+2.  github.com/gogf/gf/v2/database/gdb.(*Core).DoCommit
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:300
+3.  github.com/gogf/gf/v2/database/gdb.(*Core).DoQuery
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:62
+4.  github.com/gogf/gf/v2/database/gdb.(*Core).DoSelect
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:155
+5.  github.com/gogf/gf/v2/database/gdb.(*DriverMysql).TableFields.func1
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_driver_mysql.go:151
+6.  github.com/gogf/gf/v2/container/gmap.(*AnyAnyMap).doSetWithLockCheck
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/container/gmap/gmap_hash_any_any_map.go:220
+7.  github.com/gogf/gf/v2/container/gmap.(*AnyAnyMap).GetOrSetFuncLock
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/container/gmap/gmap_hash_any_any_map.go:257
+8.  github.com/gogf/gf/v2/database/gdb.(*DriverMysql).TableFields
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_driver_mysql.go:141
+9.  github.com/gogf/gf/v2/database/gdb.(*Core).TableFields
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_utility.go:158
+10. github.com/gogf/gf/v2/database/gdb.(*Model).TableFields
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_utility.go:41
+11. github.com/gogf/gf/v2/database/gdb.(*Model).getSoftFieldName
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_time.go:98
+12. github.com/gogf/gf/v2/database/gdb.(*Model).getSoftFieldNameDeleted
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_time.go:92
+13. github.com/gogf/gf/v2/database/gdb.(*Model).getConditionForSoftDeleting
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_time.go:144
+14. github.com/gogf/gf/v2/database/gdb.(*Model).formatCondition
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:673
+15. github.com/gogf/gf/v2/database/gdb.(*Model).getFormattedSqlAndArgs
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:565
+16. github.com/gogf/gf/v2/database/gdb.(*Model).Count
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:383
+17. github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List.func1
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:36
+18. github.com/gogf/gf/v2/util/gutil.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/util/gutil/gutil.go:39
+19. github.com/gogf/gf/v2/frame/g.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/frame/g/g_func.go:67
+20. github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:28
+21. github.com/tiger1103/gfast/v3/internal/app/oncall/service_test.TestList
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record_test.go:21
+ 
+2022-07-06 10:39:28.544 [ERRO] {e0aee311161dff168edb037b27f56c81} [ 22 ms] [default] [rows:0  ] SELECT COUNT(1) FROM `he_freezing_points_record`
+Error: Error 1146: Table 'seven-admin.he_freezing_points_record' doesn't exist 
+Stack:
+1.  github.com/gogf/gf/v2/database/gdb.(*Core).writeSqlToLogger
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:662
+2.  github.com/gogf/gf/v2/database/gdb.(*Core).DoCommit
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:300
+3.  github.com/gogf/gf/v2/database/gdb.(*Core).DoQuery
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core_underlying.go:62
+4.  github.com/gogf/gf/v2/database/gdb.(*Core).DoSelect
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_core.go:155
+5.  github.com/gogf/gf/v2/database/gdb.(*HookSelectInput).Next
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_hook.go:110
+6.  github.com/gogf/gf/v2/database/gdb.(*Model).doGetAllBySql
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:543
+7.  github.com/gogf/gf/v2/database/gdb.(*Model).Count
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/database/gdb/gdb_model_select.go:384
+8.  github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List.func1
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:36
+9.  github.com/gogf/gf/v2/util/gutil.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/util/gutil/gutil.go:39
+10. github.com/gogf/gf/v2/frame/g.Try
+    /Users/edy/go/pkg/mod/github.com/gogf/gf/v2@v2.0.6/frame/g/g_func.go:67
+11. github.com/tiger1103/gfast/v3/internal/app/oncall/service.(*freezingPointsImpl).List
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record.go:28
+12. github.com/tiger1103/gfast/v3/internal/app/oncall/service_test.TestList
+    /Users/edy/Code/go/seven/gf/seven-admin/internal/app/oncall/service/freezing_points_record_test.go:21
+ 
+2022-07-06 10:39:57.188 [DEBU] {b09af0b51c1dff16939e9e7a352a9362} [144 ms] [ssd] [rows:13 ] SHOW FULL COLUMNS FROM `he_freezing_points_record` 
+2022-07-06 10:39:57.314 [DEBU] {880cb7be1c1dff16949e9e7a124425a2} [123 ms] [ssd] [rows:1  ] SELECT COUNT(1) FROM `he_freezing_points_record` 
+2022-07-06 10:39:57.441 [DEBU] {10f610c61c1dff16959e9e7aaddf9ed5} [127 ms] [ssd] [rows:10 ] SELECT `id`,`basic_uid`,`from_type`,`from_basic_uid`,`order_id`,`income_record_id`,`refund_id`,`integral`,`status`,`content`,`is_delete`,`created_at`,`updated_at` FROM `he_freezing_points_record` LIMIT 0,10 
+2022-07-06 10:40:08.811 [DEBU] {989e4c6b1f1dff163dc4ea605946b3c3} [135 ms] [ssd] [rows:13 ] SHOW FULL COLUMNS FROM `he_freezing_points_record` 
+2022-07-06 10:40:08.946 [DEBU] {101b82731f1dff163ec4ea600b75bb7f} [132 ms] [ssd] [rows:1  ] SELECT COUNT(1) FROM `he_freezing_points_record` 
+2022-07-06 10:40:09.085 [DEBU] {e03f627b1f1dff163fc4ea609ce8a24d} [139 ms] [ssd] [rows:2  ] SELECT `id`,`basic_uid`,`from_type`,`from_basic_uid`,`order_id`,`income_record_id`,`refund_id`,`integral`,`status`,`content`,`is_delete`,`created_at`,`updated_at` FROM `he_freezing_points_record` LIMIT 0,2 
